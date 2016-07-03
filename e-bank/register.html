@@ -1,0 +1,52 @@
+<!--
+ * Author(s)		: [Collins Nji] <collins.geek@gmail.com> 
+ *			 		  	  [Wisdom Nji] <wisdomnji@gmail.com>
+ *
+ * Organisation	: Nerd Inc. [nerd.foodcointernational.com]
+ * Detail			: aton [e-banking] app.
+ * Copyright		: (c) Nerd Inc. 2016
+ * 
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>aton</title>
+      <meta charset="utf-8">
+      <meta name="application-name"content="aton" >
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="E-banking application, targeting college students" >
+		<meta name="keywords" content="" >
+		<meta name="author" content="hacker110" >
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/sign-in.css" />
+        <link rel="stylesheet" href="css/media-queries.css" />
+        <link rel="stylesheet" href="css/glyphs.css" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="images/fav2.ico">
+
+        <!-- Scripts -->
+			<script src="js/jquery-2.2.2.js"></script>
+			<script src="js/manipulator.js"></script>
+			<script src="preloadImages.js"></script>
+    </head>
+    <body>
+        <!-- .content-wrapper is the main class that encloses everything -->
+             <div class="area">
+                <h3 class="center">Register</h3>
+                <form action="auth.php" method="GET">
+                   <input class="input" type ="name" placeholder ="First Name" required = true/>
+                   <input class="input" type ="name" placeholder ="Last Name" required = true/>
+                   <input class="input" type ="digit" placeholder ="Phone Number" required = true/>
+                   <input class="input" type ="email" placeholder ="Email or Phone" required = true/>
+                   <input class="input" type ="password" placeholder ="Password" required = true/>
+                   <input class="input" type ="password" placeholder ="Confirm Password" required = true/>
+                   <input type ="submit" value="submit" />
+                </form>
+             </div>
+       </body>
+    </html>

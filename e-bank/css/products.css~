@@ -1,0 +1,9 @@
+.intro-picture, 
+.intro-picture > img {
+    position: relative;
+    display: inline-block;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    margin-top: 20px;
+}

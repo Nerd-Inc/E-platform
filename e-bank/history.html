@@ -1,0 +1,87 @@
+<!--
+ * Author(s)		: [Collins Nji] <collins.geek@gmail.com> 
+ *			 		  [Wisdom Nji] <wisdomnji@gmail.com>
+ *
+ * Organisation	    : Nerd Inc. [nerd.foodcointernational.com]
+ * Detail			: aton [e-banking] app.
+ * Copyright		: (c) Nerd Inc. 2016
+ * 
+ -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>aton | Account</title>
+      <meta charset="utf-8">
+      <meta name="application-name"content="aton" >
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="description" content="E-banking application, targeting college students" >
+		<meta name="keywords" content="" >
+		<meta name="author" content="hacker110" >
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/media-queries.css" />
+        <link rel="stylesheet" href="css/glyphs.css" />
+        <!-- favicon -->
+
+        <!-- Scripts -->
+			<script src="js/jquery-2.2.2.js"></script>
+			<script src="js/manipulator.js"></script>
+			<script src="js/classie.js"></script>
+			<script src="js/preloadImages.js"></script>
+		<script>
+				$(window).scroll(function() {     
+    				var scroll = $(window).scrollTop();
+    					if (scroll > 100) {
+        					$(".main-header").addClass("active");
+   					 }
+    					else {
+        					$(".main-header").removeClass("active");
+    					}	
+				});
+
+			</script>
+    </head>
+    <body>
+    <div class="overlay"></div>
+           <header>
+                <div class="main-header" id="header"> 
+                   <span id="menu" class="icon-dehaze span"></span> 
+                   <h1>History</h1>
+                </div>
+            </header> 
+            <!-- Menu section for mobile devices -->
+            
+            <aside class="nav">
+            
+            	<div>
+            		<span class="icon-more_vert"></span>
+            		<span class="icon-close" id="close"></span>
+            		<img src="images/img02.png" alt=" ">
+            		<div><img src="images/profile.jpg" alt=""></div>
+            		<p>Collin Grimm <br> collins.geek@gmail.com </p>
+            	</div>
+            	
+            	<div><a href="index.html" class="icon-assignment"> Status </a></div>
+            	<div><a href="transactions.html" class="icon-equalizer"> Transactions </a></div>
+            	<div><a href="account.html" class="icon-person"> Account </a></div>
+            	<div><a href="history.html" class="icon-cached"> History </a></div>
+            	<div><a href="assistant.html" class="icon-question_answer"> Customer Service </a></div>
+            	<div><a href="settings" class="icon-settings"> Account Settings </a></div>
+            </aside>
+          <div id="content-display">
+                <section class="container card-columns">
+                    <div class="card">
+                        <h3>View Entire History<span class="expand icon-event_note" id="showHide"></span></h3>
+                        <p id="pContent"></p>
+                    </div>
+                    <div class="card">
+                        <h3>Clear History<span class="expand icon-delete_forever" id="showHide2"></span></h3>
+                         <p id="pContent2"></p>        
+                </section>
+            </div>  
+    </body>
+</html>

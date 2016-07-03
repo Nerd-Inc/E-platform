@@ -1,0 +1,247 @@
+
+*, *:after, *:before, html { 
+    -webkit-box-sizing: content-box; 
+    box-sizing: content-box; 
+}
+.clearfix:before, 
+.clearfix:after {
+     content: ''; display: table; 
+}
+.clearfix:after { clear: both; }
+.no-border {
+    outline: none;
+    border: none !important;
+} 
+
+/* if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(img/Preloader_7.gif) center no-repeat #fff;
+}
+body {
+    box-sizing: border-box;
+    background: #fff no-repeat;
+    font-size: 14px;
+    font-family: 'ubuntu';
+    padding:  0;
+    margin:  0;
+    overflow-y: scroll !important;
+ }
+ .overlay {
+ 	width: 100vw;
+ 	height: 100vh;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	background-color: rgba(0,0,0,0.7);
+ 	position: absolute;
+ 	z-index: 500;
+ 	display: none;
+ }
+.overlay-visible {
+	display: block;
+}
+.rotate{
+    transition: all 0.2s cubic-bezier(0.58, 0.25, 0, 1.57) !important;
+}
+
+.rotate.down{
+    transform:rotate(180deg);
+}
+.main-header {
+    z-index: 100;
+    position: fixed;
+    display: block;
+    padding-top: 0px;
+    width: 100%;
+    height:  100px;
+    background-color: #691a99;
+    margin-top: 0px;
+    transition: 0.5s ease-in-out;  
+    
+}
+.main-header.active {
+     box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+a {
+    text-decoration: none;
+    color: #800066;
+}
+.span{
+	position: absolute;
+	top: 45%;
+	right: 10%;
+	color: #68efad;
+	font-size: 1.75em;
+}
+.main-header h1 {
+	font-size: 1.75em;
+	padding: 24px !important;
+    font-weight: 400;
+    color: #68efad;
+}
+.main-header h1 {
+	padding-top: 16px;
+}
+/* mobile navigation. using .nav class */
+.nav {
+	display: none;
+	position: fixed;
+	z-index: 10000;
+	background-color: #7b1fa2;
+	width: 245px;
+	height: 100vh;
+	left: -245px;
+	top: 0;
+	padding: 0px;
+	font-family: ubuntu;
+	transition: all 0.35s;	
+	}
+ .nav div {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	color: #fff;
+	font-family: ubuntu;
+	transition-property: background-color;
+	}
+.nav div:hover {
+	background-color: #ddd;
+	transition: 0.25s ease-in-out;
+	}
+.expand {
+	font-size: 1em !important;
+	float: right !important;
+	margin: 0px !important;
+	padding: 0px 8px 8px 0px;
+	}
+.nav div:first-child span {
+	float: right;
+	color: #000;
+	margin: 25px;
+	cursor: pointer;
+	}
+.nav div a{
+	text-decoration: none;
+	display: block;
+	font-weight: 100;
+	color:  #505050;
+	padding: 2em;
+	
+	}	
+#content-display {
+    position:  relative;
+    display: inline-block;
+    width:  100%;
+    height: 100vh;
+    padding: 0px;
+    margin:  0px;
+}
+
+#content-display h1{
+	position: absolute;
+	right: 30%;
+	top: 300px;
+	font-weight: 200;
+	font-size: 5.4em;
+	color: #909090;
+}
+.container{
+    position:  relative;
+    padding: 0px;
+    padding-top: 100px;
+    margin-right: auto;
+    margin-left: auto;  
+}
+
+.card {
+    margin: 0px;
+    width: 30%;
+    height: auto;
+    background: #fff; 
+    position: relative;
+    border-bottom: 1px solid #efefef;
+    display: block;
+}
+/* card title is given with h3 */
+.card h3 {
+    padding: 24px;
+    margin: 0px;
+    font-weight: 300;
+    direction: ltr;
+    color: #691a99;
+    font-size: 1.25em;
+}
+
+#pContent, #pContent2, #pContent3, 
+#pContent4, #pContent5, #pContent6, 
+#pContent7, #pContent8, #pContent9 {
+	display: none;
+}
+.card small {
+    padding: 0px 16px;
+    margin: 0px;
+    font-family: sans-serif;
+    color:  #ff0000;
+    font-size: 1.0em;
+}
+.card p {
+    clear: both;
+    padding: 8px 16px;
+    font-size: 1.1em;
+    word-wrap: break-word;
+    color: #404040;
+}
+.card span{
+    padding: 4px 8px;
+    font-size: 1.5em;
+    color: #909090;
+    clear: both;
+    border-radius: 2px;
+    cursor: pointer;
+} 
+/*.card ul {
+    list-style: none;
+    padding: 16px 16px;
+    margin: 0px;
+}
+.card ul li {
+    padding-left: 8px;
+    padding-bottom: 24px;
+    margin: 0px;
+    font-size: 1.25em;
+    color:  #808080;
+    list-style: none;
+    display: inline;
+}
+*/
+
+.footer {
+	width: 100%;
+	height: 20px;
+	position: relative;
+	padding: 0px;
+	border-top: 1px solid #ccc;
+}
+.footer ul {
+    position: relative;
+    padding: 20px 20px 0px 0px;
+    font-family: ubuntu;
+    float: right; 
+}
+.footer ul li {
+    display:  inline;
+    padding-right: 30px;
+    list-style: none;
+    color:  #606060;
+    font-size: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}

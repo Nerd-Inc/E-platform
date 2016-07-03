@@ -1,0 +1,105 @@
+@media screen and (min-width: 300px) {
+    body {
+        font-size: 90%;
+    }
+.nav {
+	display: block;
+	position: fixed;
+	z-index: 10000;
+	width: 245px;
+	height: 100vh;
+	left: -245px;
+	top: 0;
+	padding: 0px;
+	transition: all 0.35s;	
+	overflow-y: scroll;
+	}
+
+ .nav div {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	font-family: ubuntu;
+	transition-property: background-color;
+	}
+.nav div:hover {
+	background-color: #691a99;
+	transition: 0.25s ease-in-out;
+	}
+.nav div:first-child img{
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	}
+.nav div:first-child div {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	top: calc(50% - 25%);
+	left: calc(30% - 25%);
+	background-color: #68efad;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.24), 0px 0px 6px rgba(0,0,0,0.24);
+    z-index: 10;
+	}
+.nav div:first-child div img {
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	border-radius: 50%;
+}}
+.nav div:first-child span {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	color: #000;
+	margin: 0px;
+	padding: 0px;
+	cursor: pointer;
+	background-color: #efefef;
+	border-radius: 50%;
+	padding: 8px;
+	}
+.nav div:first-child p {
+	position: absolute;
+	top: calc(90% - 25%);
+	left: calc(30% - 25%);
+	color: #000;
+	font-size: 80%;
+	text-transform: lowercase;
+}
+.nav div a{
+	text-decoration: none;
+	display: block;
+	font-weight: 100;
+	padding: 2em;
+	color: #fff;
+	
+	}	
+
+.big-picture img {
+	width: 90vw;
+	margin-top: 0px;
+	}
+	.card {
+		width: 100% !important;
+		margin: 15px 0px;
+	}
+	 .card-columns {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1;
+    -webkit-column-gap: 1.25rem;
+       -moz-column-gap: 1.25rem;
+            column-gap: 1.25rem;
+  }
+  .card-columns .card {
+    display: inline-block;
+    width: 100%;
+ }
+ .footer ul {
+ 	display: none;
+ 	}
+}

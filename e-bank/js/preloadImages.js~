@@ -1,0 +1,22 @@
+function preloadImages(array) {
+    if (!preloadImages.list) {
+        preloadImages.list = [];
+    }
+    var list = preloadImages.list;
+    for (var i = 0; i < array.length; i++) {
+        var img = new Image();
+        img.onload = function() {
+            var index = list.indexOf(this);
+            if (index !== -1) {
+                list.splice(index, 1);
+            }
+        }
+        list.push(img);
+        img.src = array[i];
+    }
+}
+
+preloadImages(["about.alt.svg", "img05.svg", "img08.svg",
+ 				"nerd-logo-grey.svg", "about.svg", "img06.svg" 
+ 				"img09.svg", "nerd-logo.svg", "explore.svg", "img07.svg" 
+ 				"nerd2-text.svg",  "products.svg"]);
