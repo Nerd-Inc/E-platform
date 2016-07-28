@@ -1,0 +1,93 @@
+
+html, *, *:after, *:before{ 
+    box-sizing: border-box; 
+}
+
+body {
+    box-sizing: border-box;
+    background: #fff no-repeat;
+    font-family: 'Poiret One', sans-serif;
+    padding:  0;
+    margin:  0;
+    overflow: hidden !important;
+    -webkit-animation: anime 90s both linear;
+    -webkit-animation-iteration-count: infinite;
+ }	
+
+#content-display {
+    position:  relative;
+    display: inline-block;
+    width:  100%;
+    height: 100vh;
+    padding: 0px;
+    margin:  0px;
+}
+
+#content-display h1{
+	position: absolute;
+	top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+	font-weight: 200;
+	font-size: 5em;
+	text-align: center;
+	color: #fff;
+	z-index: 100;
+}
+#content-display h1 span{
+	font-weight: 200;
+	color: #00222b;
+}
+.center {
+	text-align: center !important;
+}
+
+@keyframes anime {
+	0% {
+		background-color: #fff;
+	}
+	10% {
+	background-color: #aaeeff;
+	color: #fff;
+	}
+	20%{
+		background-color: #80e5ff;
+		color: #fff;
+	}
+  	30% {
+    	background-color: #55ddff;
+  	}
+	40% {
+    	background-color: #2ad4ff;
+  	}
+  	50% {
+    	background-color: #00ccff;
+  	}
+  	60% {
+    	background-color: #00dda4;
+  	}
+  	70% {
+    	background-color: #0088aa;
+  	}
+  	80% {
+    	background-color: #006680;
+  	}
+  	90% {
+    	background-color: #004455;
+  	}
+  	100% {
+    	background-color: #00222b;
+  	}
+}
+
+/* Media Queries */
+@media only screen and (max-width: 300px) {
+
+   .center{ font-size: 2em; }
+    body {
+        overflow-y: scroll;
+        overflow-x: hidden !important;
+    }
+   #content-display h1{ font-size: 1.333em;}
+}
